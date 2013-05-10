@@ -32,6 +32,7 @@ loadClass = { className ->
 
 
 eventTestPhasesStart = { phases ->
+    println "TestPhasesStart"
     //classLoader.URLs.each { println "classLoader: $it" }
 
     if (! phases.contains ('functional')) {
@@ -48,11 +49,10 @@ eventTestPhasesStart = { phases ->
     }
 }
 
-/*
-eventTestPhasesEnd = {
 
+eventTestPhasesEnd = {
+    println "TestPhasesEnd"
 }
-*/
 
 /*
 See the following links to understand why we have to manually load the test type class.
